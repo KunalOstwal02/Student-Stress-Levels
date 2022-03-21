@@ -1,0 +1,76 @@
+---
+title: "Linear Modelling"
+output: html_document
+---
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(plotly)
+library(ggbeeswarm)
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='hide', echo=FALSE}
+data = read.csv("Stress - Form Responses.csv", na.strings=c("","NA"))
+data$Gender = factor(data$Gender)
+data$Age = factor(data$Age)
+data$Country = factor(data$Country)
+data$Major = factor(data$Major)
+data$NumUnits = factor(data$NumUnits)
+str(data)
+
+```
+
+## Linear Modelling:
+
+### Modelling Correlation Coefficients:
+```{r, warning = FALSE, message = FALSE, echo=FALSE}
+diff_cor = cor(stress_data$GeneralStress, stress_data$DifficultyStress)
+major_cor = cor(stress_data$GeneralStress, stress_data$MajorStress)
+mode_cor =  cor(stress_data$GeneralStress, stress_data$ModeStress)
+unit_cor = cor(stress_data$GeneralStress, stress_data$UnitStress)
+cul_cor = cor(stress_data$GeneralStress, stress_data$CulturalStress)
+```
+Correlation factors:  
+r~Difficulty~ : `r diff_cor`  
+r~Major~ : `r major_cor`  
+r~Mode~ : `r mode_cor`  
+r~Unit~ : `r unit_cor`  
+r~Cultural~ : `r cul_cor`  
+
+By comparing the correlation coefficients of each stress factors, we clearly see stress caused by major of the student and the difficulty of their study units has the highest correlation with overall stress.
+
+### Linear Modeling:
+```{r, warning=FALSE, message=FALSE, results ='hide', echo=FALSE}
+major_lm = lm(data = data, GeneralStress ~ MajorStress)
+
+major_res = resid(major_lm)
+major_rg <- ggplot(major_lm, aes(y = resid(major_lm), x = c(1:length(resid(major_lm))))) + geom_point(color = "darkblue", alpha = 0.6, shape = 8) + geom_hline(yintercept = 0, col = "darkblue") + labs(title = "Linear Relation between Major and Overall Stres | Residual Plots", x = "Major Stress", y = "Overall Stress")
+major_rg <- ggplotly(major_rg) %>% layout(autosize = F, width = 750, height = 400)
+
+maj_str = ggplot(data, aes(x = MajorStress, y = GeneralStress)) + geom_jitter(height = 0.3, width = 0.3, alpha = 0.6, shape = 8) + geom_smooth(method = "lm") + labs(title = "Residual Graph between Major and Overall Stress", x = "Major Stress", y = "Overall Stress")
+major_str <- ggplotly(maj_str) %>% layout(autosize = F, width = 750, height = 400)
+```
+
+
+```{r, warning=FALSE, message=FALSE, results ='hide', echo=FALSE}
+diff_lm = lm(data = data, GeneralStress ~ DifficultyStress)
+
+diff_res = resid(diff_lm)
+diff_rg <- ggplot(diff_lm, aes(y = resid(diff_lm), x = c(1:length(resid(diff_lm))) )) + geom_point(color = "darkblue", alpha = 0.6, shape = 8) + geom_hline(yintercept = 0, col = "darkblue") + labs(title = "Linear Relation between Difficulty and Overall Stress | Residual Plot", x = "Major Stress", y = "Overall Stress")
+diff_rg <- ggplotly(diff_rg) %>% layout(width = 750, height = 400)
+
+diff_str = ggplot(data, aes(x = DifficultyStress, y = GeneralStress)) + geom_jitter(height = 0.3, width = 0.3, alpha = 0.6, shape = 8) + geom_smooth(method = "lm") + labs(title = "Linear Relation between Difficulty and Overall Stress", x = "Difficulty Stress", y = "Overall Stress")
+diff_str <- ggplotly(diff_str) %>% layout(width = 750, height = 400) 
+```
+
+```{r, warning=FALSE, message=FALSE, echo = FALSE}
+subplot(maj_str, add_trace(major_rg), titleX = T, titleY = T, shareY = F)
+subplot(diff_str, add_trace(diff_rg), titleX = T, titleY = T, shareY = F)
+```
+Satisfied assumptions made:  
+* Linear relationships between independent (`Majors` & `Study Difficulty`) and dependent variables (`Overall stress`)  
+* Independency of students’ stress levels  
+* Equal spread in the y-direction shows homoscedasticity of data  
+
+Since both the aforementioned stressors have higher correlation association to the students’ overall stress compared to the other stressors, we can suggest that mainly certain majors contribute most significantly, followed by the courses’ difficulty. 

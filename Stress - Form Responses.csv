@@ -1,0 +1,93 @@
+Gender,Age,GeneralStress,Country,CulturalStress,Major,MajorStress,NumUnits,UnitStress,DifficultyStress,StudyMode,ModeStress
+Female,20,6,India,5,Arts & Social Sciences,7,5+,7,6,Remote,6
+Female,20,6,Bangladesh,2,Arts & Social Sciences,7,4 to 5,6,5,Remote,6
+Female,19,6,India,2,Arts & Social Sciences,5,4 to 5,7,7,Remote,7
+Female,19,5,India,2,Arts & Social Sciences,2,4 to 5,4,2,Remote,3
+Female,19,3,India,4,Arts & Social Sciences,2,1 to 3,2,2,Remote,6
+Male,21,6,India,7,Arts & Social Sciences,6,5+,6,7,Remote,7
+Female,18,5,India,3,Arts & Social Sciences,2,5+,7,6,Remote,7
+Female,20,4,India,4,Arts & Social Sciences,1,1 to 3,1,4,Remote,7
+Female,18,6,India,4,Arts & Social Sciences,5,5+,6,4,Remote,6
+Female,18,4,India,3,Arts & Social Sciences,3,4 to 5,3,2,Remote,4
+Female,20,2,India,4,Arts & Social Sciences,2,4 to 5,5,3,Remote,7
+Female,18,4,India,5,Arts & Social Sciences,6,5+,5,5,Campus,5
+Female,18,7,India,7,Arts & Social Sciences,7,5+,6,5,Campus,6
+Female,18,3,India,2,Arts & Social Sciences,4,4 to 5,3,4,Remote,7
+Female,18,5,United States,5,Arts & Social Sciences,3,5+,7,5,Remote,7
+Female,19,6,India,4,Business,5,4 to 5,5,6,Remote,6
+Female,20,7,Bangladesh,7,Business,4,4 to 5,7,7,Remote,7
+Female,22,6,Bangladesh,5,Business,4,4 to 5,2,3,Remote,7
+Female,27,4,Bangladesh,3,Business,2,5+,3,4,Campus,4
+Female,26,5,Bangladesh,3,Business,5,4 to 5,5,5,Campus,3
+Female,20,7,Bangladesh,7,Business,2,4 to 5,2,3,Remote,6
+Male,21,6,Bangladesh,4,Business,3,4 to 5,6,5,Remote,5
+Female,21,7,Bangladesh,4,Business,4,4 to 5,6,7,Remote,6
+Female,18,2,India,4,Business,2,4 to 5,3,2,Remote,7
+Female,18,4,India,3,Business,1,5+,4,3,Remote,5
+Female,18,5,New Zealand,2,Business,5,4 to 5,3,6,Campus,2
+Female,20,7,Australia,2,Business,6,4 to 5,6,6,Campus,6
+Male,18,7,India,7,Business,6,1 to 3,7,7,Remote,7
+Male,19,5,India,5,Business,6,4 to 5,6,4,Remote,7
+Male,18,7,India,6,Business,6,1 to 3,7,7,Campus,7
+Male,18,6,India,4,Business,5,4 to 5,5,5,Remote,5
+Male,19,5,India,3,Business,5,4 to 5,1,4,Remote,7
+Female,18,6,India,5,Computing,5,4 to 5,4,3,Remote,7
+,18,3,Australia,1,Computing,4,4 to 5,5,4,Campus,1
+Female,19,6,Australia,2,Computing,6,4 to 5,5,5,Remote,3
+Female,19,5,Australia,4,Computing,5,4 to 5,5,6,Remote,4
+Male,18,5,Australia,1,Computing,2,5+,7,4,Remote,4
+Male,19,5,Australia,4,Computing,6,4 to 5,6,5,Campus,4
+Female,20,7,Bangladesh,1,Computing,7,4 to 5,4,7,Remote,7
+Female,19,7,Bangladesh,5,Computing,3,4 to 5,2,3,Remote,2
+Male,20,7,China,4,Computing,3,4 to 5,7,7,Remote,4
+Male,26,7,Indonesia,7,Computing,7,4 to 5,7,7,Campus,1
+Female,18,5,Nepal,1,Computing,3,4 to 5,7,5,Campus,3
+,18,5,Singapore,5,Computing,5,4 to 5,5,5,Remote,6
+Non-binary,21,6,Singapore,5,Computing,7,4 to 5,5,7,Remote,6
+Male,21,7,India,5,Computing,6,4 to 5,5,3,Campus,4
+Male,19,6,India,2,Computing,7,4 to 5,5,7,Remote,5
+,18,6,India,5,Computing,4,4 to 5,6,3,Remote,7
+Female,18,5,India,2,Engineering,6,4 to 5,5,6,Remote,5
+Female,18,4,India,6,Engineering,7,5+,7,2,Remote,4
+Male,28,6,Bangladesh,4,Engineering,5,4 to 5,7,7,Remote,2
+Male,20,6,Bangladesh,5,Engineering,7,4 to 5,7,7,Remote,4
+Male,18,7,India,1,Engineering,5,4 to 5,7,7,Remote,7
+Male,18,5,India,4,Engineering,5,5+,7,3,Remote,7
+Female,20,7,Bangladesh,7,Law,7,1 to 3,7,7,Remote,7
+Male,18,4,India,2,Law,4,5+,5,5,Remote,4
+Female,18,4,Australia,2,Medicine,2,4 to 5,3,3,Campus,3
+Female,18,5,Australia,2,Medicine,4,4 to 5,6,6,Campus,5
+Female,26,6,Australia,5,Medicine,7,4 to 5,7,6,Remote,5
+Male,27,7,Bangladesh,7,Medicine,7,4 to 5,7,6,Campus,6
+Female,16,5,India,2,Science,7,4 to 5,7,5,Remote,6
+Female,17,6,India,2,Science,5,5+,7,6,Campus,5
+,19,7,Australia,1,Science,5,4 to 5,7,7,Remote,1
+,19,5,Australia,1,Science,5,1 to 3,2,6,Campus,2
+,18,6,Australia,4,Science,3,4 to 5,5,4,Campus,3
+,23,4,Australia,2,Science,3,4 to 5,5,4,Campus,2
+Male,18,3,Australia,1,Science,4,5+,4,4,Campus,1
+Female,21,5,Australia,3,Science,3,4 to 5,6,5,Campus,3
+Male,19,6,Australia,6,Science,7,4 to 5,6,6,Remote,5
+Female,18,4,Australia,2,Science,4,4 to 5,6,7,Campus,6
+Male,29,5,Australia,3,Science,5,4 to 5,6,6,Campus,3
+Female,18,4,Australia,1,Science,1,4 to 5,7,5,Campus,1
+Female,30,4,Bangladesh,5,Science,4,1 to 3,5,6,Remote,5
+Female,20,7,Bangladesh,5,Science,7,4 to 5,4,6,Remote,7
+Male,19,6,Bangladesh,7,Science,4,4 to 5,4,4,Remote,5
+,22,5,China,5,Science,4,4 to 5,5,5,Remote,4
+Female,19,6,China,5,Science,6,4 to 5,5,5,Campus,2
+Female,19,5,China,6,Science,4,5+,6,5,Campus,5
+Female,18,6,Hong Kong,1,Science,6,4 to 5,7,6,Remote,4
+Female,19,5,Hong Kong,2,Science,2,4 to 5,5,5,Remote,5
+Male,18,5,India,2,Science,2,4 to 5,4,3,Remote,7
+Male,18,7,India,7,Science,5,1 to 3,2,3,Remote,7
+Male,19,7,India,2,Science,6,4 to 5,5,7,Remote,7
+Female,18,5,Indonesia,3,Science,6,4 to 5,5,7,Campus,4
+Male,26,3,Singapore,4,Science,1,4 to 5,5,5,Campus,4
+Male,26,3,Singapore,5,Science,3,4 to 5,6,5,Campus,5
+Male,19,3,Turkey,5,Science,3,4 to 5,5,2,Remote,6
+Male,19,2,Turkey,3,Science,3,4 to 5,5,1,Remote,6
+Female,19,4,Uk,4,Science,3,5+,5,3,Campus,4
+Female,19,4,Uk,4,Science,3,5+,5,3,Campus,4
+Female,19,4,Uk,4,Science,3,5+,5,3,Campus,4
+,20,2,Vietnam,1,Science,1,4 to 5,2,2,Remote,3
